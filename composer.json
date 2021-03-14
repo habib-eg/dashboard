@@ -1,0 +1,39 @@
+{
+    "name": "habib/dashboard",
+    "description": "habib/dashboard",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Habib",
+            "email": "mohamedhabibwork@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "realrashid/sweet-alert": "^3",
+        "barryvdh/laravel-ide-helper": "*",
+        "spatie/laravel-activitylog": "^3",
+        "spatie/laravel-permission": "^3",
+        "spatie/laravel-sitemap": "^5",
+        "spatie/laravel-sluggable": "^2",
+        "spatie/laravel-backup": "^6",
+        "artesaos/seotools": "0.*",
+        "ramsey/uuid": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Habib\\Dashboard\\": "src/"
+        },
+        "files": [
+            "src/helpers/main.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Habib\\Dashboard\\Providers\\DashboardServiceProvider"
+            ]
+        }
+    }
+}
